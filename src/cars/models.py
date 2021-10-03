@@ -5,6 +5,11 @@ class Person(models.Model):
     last_name = models.CharField(max_length=50)
     age = models.IntegerField()
 
+    class Meta:
+        verbose_name_plural = "People"
+
+    def __str__(self):
+        return self.first_name + ' ' + self.last_name
 
 # Create your models here.
 class Car(models.Model):
@@ -17,3 +22,7 @@ class Car(models.Model):
     birthday = models.DateField(blank=True, null=True)
     last_revision = models.DateTimeField(blank=True, null=True)
     owner = models.ForeignKey(Person, on_delete=models.CASCADE, null=True)
+
+    def __str__(self):
+        return self.color + ' car'
+
