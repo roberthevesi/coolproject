@@ -8,3 +8,4 @@
 3. after activation, make sure there's `(.venv)` at the beginning
 4. install requirements with `pip install -r requirements.txt`
 5. create a django project: `django-admin startproject <project_name>`
+6. create a django app: `django-admin startapp <app_name>`
