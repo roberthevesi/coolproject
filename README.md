@@ -9,3 +9,4 @@
 4. install requirements with `pip install -r requirements.txt`
 5. create a django project: `django-admin startproject <project_name>`
 6. create a django app: `django-admin startapp <app_name>`
+7. to run project: `python src/manage.py runserver`
